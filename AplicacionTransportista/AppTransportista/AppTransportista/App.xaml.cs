@@ -9,13 +9,17 @@ namespace AppTransportista
 {
     public partial class App : Application
     {
+        #region Properties
         public static MasterPage Master { get; internal set; }
+        public static NavigationPage Navigator { get; internal set; }
+        #endregion
+
 
         public App()
         {
             InitializeComponent();
 
-            MainPage = new AppTransportista.MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
