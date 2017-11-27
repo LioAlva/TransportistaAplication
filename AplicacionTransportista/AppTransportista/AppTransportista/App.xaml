@@ -1,10 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTransportista.App">
+             x:Class="AppTransportista.App"
+             xmlns:infra="clr-namespace:AppTransportista.Infrastructure;assembly=AppTransportista"
+             >
 	<Application.Resources>
 
 		<!-- Application resource dictionary -->
+        <!--Color-->
+        <Color x:Key="MainColor">#1b2b32</Color>
+        <Color x:Key="FontColor">#e1e7e8</Color>
+        <Color x:Key="MenuColor">#a35236</Color>
+        <Color x:Key="MenuFontColor">#e1e7e8</Color>
+        <Color x:Key="BackgroundColor">#37646b</Color>
+        <Color x:Key="AccentColor">#b22e22</Color>
+        <Color x:Key="ComodinColor">#FFCC00</Color>
 
-	</Application.Resources>
+        <Color x:Key="RedColor">#D97925</Color>
+        <Color x:Key="OrangeColor">#AB1A25</Color>
+
+        <!--Locator-->
+        <infra:InstanceLocator x:Key="Locator"></infra:InstanceLocator>
+
+
+    </Application.Resources>
 </Application>

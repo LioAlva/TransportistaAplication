@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using AppTransportista.Pages;
 using Xamarin.Forms;
 
 namespace AppTransportista
 {
     public partial class App : Application
     {
+        public static MasterPage Master { get; internal set; }
+
         public App()
         {
             InitializeComponent();
